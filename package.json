@@ -1,0 +1,29 @@
+{
+    "name": "lmglk.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Lmglk/Lmglk.github.io.git"
+    },
+    "author": "Leonid Veretennikov <megalok10@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Lmglk/Lmglk.github.io/issues"
+    },
+    "homepage": "https://github.com/Lmglk/Lmglk.github.io#readme",
+    "devDependencies": {
+        "husky": "^4.2.1",
+        "prettier": "^1.19.1",
+        "pretty-quick": "^2.0.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run prod && pretty-quick --staged"
+        }
+    }
+}
