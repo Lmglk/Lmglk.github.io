@@ -13,6 +13,10 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js'],
     },
     devtool: 'source-map',
+    devServer: {
+        port: 4200,
+        hot: true,
+    },
     module: {
         rules: [
             {
