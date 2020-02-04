@@ -1,11 +1,15 @@
 {
     "compilerOptions": {
+        "declaration": true,
         "strict": true,
         "sourceMap": true,
         "noImplicitAny": true,
         "module": "commonjs",
         "target": "es6",
         "jsx": "react",
-        "outDir": "./dist/"
-    }
+        "outDir": "./dist/",
+        "typeRoots": ["./node_modules/@types"]
+    },
+    "include": ["types/*.d.ts"],
+    "files": ["src/index.tsx"]
 }
