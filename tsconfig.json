@@ -1,15 +1,16 @@
 {
     "compilerOptions": {
         "declaration": true,
+        "esModuleInterop": true,
         "strict": true,
         "sourceMap": true,
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "module": "commonjs",
-        "target": "es6",
+        "target": "es5",
         "jsx": "react",
         "outDir": "./dist/",
-        "typeRoots": ["./node_modules/@types"]
+        "typeRoots": ["./node_modules/@types", "./types/"]
     },
-    "include": ["types/*.d.ts"],
+    "include": ["types/**/*.d.ts"],
     "files": ["src/index.tsx"]
 }

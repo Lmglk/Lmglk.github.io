@@ -1,11 +1,12 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const TerserWebpackPlugin = require('terser-webpack-plugin');
-const postcssUnits = require('postcss-units');
-const cssnano = require('cssnano');
+import webpack from 'webpack';
+import path from 'path';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import HTMLWebpackPlugin from 'html-webpack-plugin';
+import TerserWebpackPlugin from 'terser-webpack-plugin';
+import postcssUnits from 'postcss-units';
+import cssnano from 'cssnano';
 
-module.exports = {
+const config: webpack.Configuration = {
     mode: 'production',
     entry: './src/index.tsx',
     output: {
@@ -84,3 +85,5 @@ module.exports = {
         }),
     ],
 };
+
+export default config;
