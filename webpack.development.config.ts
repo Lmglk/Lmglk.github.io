@@ -1,9 +1,10 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const postcssUnits = require('postcss-units');
+import webpack from 'webpack';
+import path from 'path';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import HTMLWebpackPlugin from 'html-webpack-plugin';
+import postcssUnits from 'postcss-units';
 
-module.exports = {
+export const config: webpack.Configuration = {
     mode: 'development',
     entry: './src/index.tsx',
     output: {
@@ -76,3 +77,5 @@ module.exports = {
         }),
     ],
 };
+
+export default config;
