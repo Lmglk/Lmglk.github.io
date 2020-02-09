@@ -5,6 +5,7 @@ export interface IPerson {
     contacts: {
         phone: string;
         email: string;
+        github: string;
         location: string;
     };
 }
