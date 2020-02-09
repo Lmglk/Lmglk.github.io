@@ -72,6 +72,10 @@ const config: webpack.Configuration = {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,
                 use: ['file-loader'],
             },
+            {
+                test: /\.(woff2?)$/,
+                use: ['file-loader'],
+            },
         ],
     },
     plugins: [
