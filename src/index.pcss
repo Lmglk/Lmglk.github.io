@@ -11,12 +11,6 @@ body {
     color: var(--color-text);
 }
 
-h1 {
-    margin: rem(8) 0;
-    color: var(--color-text-accent);
-    font-weight: normal;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -26,4 +20,37 @@ h1 {
     --color-text: #9d9d9d;
     --color-text-accent: #4b4b4b;
     --color-border: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: rem(8) 0;
+    font-weight: normal;
+    color: var(--color-text-accent);
+    text-transform: uppercase;
+}
+
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
+    content: '';
+    display: block;
+    height: rem(4);
+    width: rem(50);
+    background-color: var(--color-text-accent);
+    margin-top: rem(4);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }

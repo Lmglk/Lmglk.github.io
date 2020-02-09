@@ -8,6 +8,7 @@ export const data: IPerson = {
     contacts: {
         phone: '+7 (931) 965-76-77',
         email: 'megalok10@gmail.com',
+        github: 'https://github.com/Lmglk',
         location: 'Saint Petersburg',
     },
 };
