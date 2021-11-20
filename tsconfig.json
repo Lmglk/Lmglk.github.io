@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types/"
+    ]
+  },
+  "include": [
+    "types/**/*.d.ts"
+  ],
+  "files": [
+    "src/index.tsx"
+  ]
+}
