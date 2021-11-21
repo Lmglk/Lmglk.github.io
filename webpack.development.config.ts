@@ -27,7 +27,7 @@ export const config: webpack.Configuration = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: ['ts-loader']
+                use: ['ts-loader'],
             },
             {
                 test: /\.css$/,
@@ -46,12 +46,14 @@ export const config: webpack.Configuration = {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,
                 use: ['file-loader'],
             },
-        ]
+        ],
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HTMLWebpackPlugin({ template: path.resolve(__dirname, 'src/index.html')})
-    ]
-}
+        new HTMLWebpackPlugin({
+            template: path.resolve(__dirname, 'src/index.html'),
+        }),
+    ],
+};
 
 export default config;
