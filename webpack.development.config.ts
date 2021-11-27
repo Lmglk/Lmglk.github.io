@@ -43,6 +43,24 @@ export const config: webpack.Configuration = {
                 ],
             },
             {
+                test: /\.pcss$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                        },
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true,
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,
                 use: ['file-loader'],
             },

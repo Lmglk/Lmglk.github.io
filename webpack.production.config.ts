@@ -3,12 +3,13 @@ import path from 'path';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import TerserWebpackPlugin from 'terser-webpack-plugin';
+import cssnano from 'cssnano';
 
 const config: webpack.Configuration = {
     mode: 'production',
     entry: './src/index.tsx',
     output: {
-        filename: '[name].[hash].js',
+        filename: '[name].[fullhash].js',
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
@@ -39,6 +40,29 @@ const config: webpack.Configuration = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.pcss$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                        },
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true,
+                            postcssOptions: {
+                                plugins: [
+                                    cssnano()
+                                ]
+                            }
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,
