@@ -56,9 +56,9 @@ export const config: webpack.Configuration = {
                         loader: 'postcss-loader',
                         options: {
                             sourceMap: true,
-                        }
-                    }
-                ]
+                        },
+                    },
+                ],
             },
             {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,

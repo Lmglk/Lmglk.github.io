@@ -56,13 +56,11 @@ const config: webpack.Configuration = {
                         options: {
                             sourceMap: true,
                             postcssOptions: {
-                                plugins: [
-                                    cssnano()
-                                ]
-                            }
-                        }
-                    }
-                ]
+                                plugins: [cssnano()],
+                            },
+                        },
+                    },
+                ],
             },
             {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,

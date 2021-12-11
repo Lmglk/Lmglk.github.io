@@ -1,5 +1,11 @@
-* {
-    box-sizing: border-box;
+:root {
+    --background-color: #18141a;
+
+    --accent-color: #ffae39;
+    --accent-active-color: #b27a28;
+
+    --text-on-accent-color: #000000;
+    --text-color: #ffffff;
 }
 
 html {
@@ -9,4 +15,10 @@ html {
 body {
     margin: 0;
     font-size: 1.6rem;
+
+    background-color: var(--background-color);
+}
+
+* {
+    box-sizing: border-box;
 }
