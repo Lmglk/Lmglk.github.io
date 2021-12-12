@@ -1,3 +1,5 @@
+@import 'fonts.pcss';
+
 :root {
     --background-color: #18141a;
 
@@ -14,11 +16,23 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
 
     background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 * {
     box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
 }
