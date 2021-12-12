@@ -9,6 +9,7 @@ export const config: webpack.Configuration = {
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: 'http://localhost:4200/',
     },
     resolve: {
         extensions: ['.ts', '.tsx', '.js'],
@@ -62,7 +63,15 @@ export const config: webpack.Configuration = {
             },
             {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,
-                use: ['file-loader'],
+                type: 'asset/resource',
+            },
+            {
+                test: /\.woff2$/,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.md$/,
+                type: 'asset/source',
             },
         ],
     },
