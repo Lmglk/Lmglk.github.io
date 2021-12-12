@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { Fragment, ReactElement } from 'react';
 
 import { Header } from './Header';
+import { MainSection } from './MainSection';
 
-export function App(): React.ReactElement {
-    return <Header />;
+export function App(): ReactElement {
+    return (
+        <Fragment>
+            <Header />
+            <MainSection />
+        </Fragment>
+    );
 }

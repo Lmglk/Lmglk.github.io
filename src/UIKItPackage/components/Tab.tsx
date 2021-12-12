@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import { classList } from '../utils/classList';
 
@@ -10,11 +10,7 @@ type IProps = {
     onClick?: () => void;
 };
 
-export function Tab({
-    name,
-    onClick,
-    active = false,
-}: IProps): React.ReactElement {
+export function Tab({ name, onClick, active = false }: IProps): ReactElement {
     const classes = classList({
         [styles.tab]: true,
         [styles.active]: active,
