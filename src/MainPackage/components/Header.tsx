@@ -7,7 +7,7 @@ import styles from './Header.pcss';
 
 export function Header(): ReactElement {
     const sections = Object.values(SectionsEnum).map(name => (
-        <Tab key={name} name={name} />
+        <Tab key={name} name={name} href="#" />
     ));
 
     return (
