@@ -12,7 +12,7 @@ interface IProps {
 
 export function MainSection(props: IProps): ReactElement {
     return (
-        <main className={styles.grid}>
+        <section className={styles.grid}>
             <Markdown className={styles.content}>{props.content}</Markdown>
             <div className={styles.imageContainer}>
                 <img
@@ -24,6 +24,6 @@ export function MainSection(props: IProps): ReactElement {
                 />
                 <div className={styles.imageShadow} />
             </div>
-        </main>
+        </section>
     );
 }
