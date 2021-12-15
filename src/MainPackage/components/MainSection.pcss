@@ -26,6 +26,22 @@ p:nth-child(2) {
     font-weight: 300;
 }
 
+.imageContainer {
+    position: relative;
+}
+
 .image {
+    display: block;
     width: 100%;
+    height: auto;
+}
+
+.imageShadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 1.5rem 0 12rem 9rem var(--background-color),
+        inset 15px -80px 155px 150px var(--background-color);
 }

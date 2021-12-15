@@ -6,7 +6,7 @@ import { SectionsEnum } from '../enums/SectionsEnum';
 import styles from './Header.pcss';
 
 export function Header(): ReactElement {
-    const sections = Object.values(SectionsEnum).map((name, index) => (
+    const sections = Object.values(SectionsEnum).map(name => (
         <Tab key={name} name={name} />
     ));
 
