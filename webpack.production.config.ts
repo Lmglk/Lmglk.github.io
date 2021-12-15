@@ -64,7 +64,15 @@ const config: webpack.Configuration = {
             },
             {
                 test: /\.(png|jpe?g|gif|svg|webp)$/,
-                use: ['file-loader'],
+                type: 'asset/resource',
+            },
+            {
+                test: /\.woff2$/,
+                type: 'asset/resource',
+            },
+            {
+                test: /\.md$/,
+                type: 'asset/source',
             },
         ],
     },

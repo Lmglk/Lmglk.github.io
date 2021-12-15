@@ -24,8 +24,10 @@
         }
     },
     "rules": {
+        "react/destructuring-assignment": "off",
         "react/require-default-props": "off",
         "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+        "react/jsx-fragments": "off",
         "react/function-component-definition": [
             "error",
             {

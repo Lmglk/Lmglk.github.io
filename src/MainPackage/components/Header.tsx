@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import { Tab } from '../../UIKItPackage/components/Tab';
 import { SectionsEnum } from '../enums/SectionsEnum';
 
 import styles from './Header.pcss';
 
-export function Header(): React.ReactElement {
-    const sections = Object.values(SectionsEnum).map((name, index) => (
+export function Header(): ReactElement {
+    const sections = Object.values(SectionsEnum).map(name => (
         <Tab key={name} name={name} />
     ));
 
