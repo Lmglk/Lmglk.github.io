@@ -30,11 +30,60 @@ body {
 }
 
 h1 {
-    margin: 0;
     font-size: 4.8rem;
     font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    position: relative;
+    font-weight: 400;
+    font-size: 3.6rem;
+    padding-left: 4.2rem;
+    margin: 0;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--accent-color);
+    border-radius: 0.4rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 
 p {
     margin: 0;
+}
+
+ul {
+    padding-left: 0.6rem;
+    margin: 3rem 0;
+}
+
+ul li {
+    position: relative;
+    list-style-type: none;
+    padding: 3rem 0 3rem 4.6rem;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    top: 6.2rem;
+    left: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 0.2rem solid var(--accent-color);
+    border-radius: 50%;
+    box-sizing: border-box;
 }

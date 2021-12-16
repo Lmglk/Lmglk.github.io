@@ -9,8 +9,8 @@ interface IProps {
 
 export function ExperienceSection(props: IProps): ReactElement {
     return (
-        <section>
-            <Markdown className={styles.content}>{props.content}</Markdown>
+        <section className={styles.content}>
+            <Markdown>{props.content}</Markdown>
         </section>
     );
 }
