@@ -1,0 +1,17 @@
+.listItem {
+    position: relative;
+    list-style-type: none;
+    padding: 3rem 0 3rem 4.6rem;
+}
+
+.listItem::before {
+    content: '';
+    position: absolute;
+    top: 6.2rem;
+    left: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 0.2rem solid var(--accent-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
