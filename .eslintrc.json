@@ -28,6 +28,14 @@
         "react/require-default-props": "off",
         "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
         "react/jsx-fragments": "off",
+        "react/jsx-props-no-spreading": [
+            "error",
+            {
+                "html": "ignore",
+                "custom": "enforce",
+                "explicitSpread": "enforce"
+            }
+        ],
         "react/function-component-definition": [
             "error",
             {

@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    width: 120rem;
-    margin: auto;
 }
 
 .content {
@@ -12,13 +10,13 @@
     padding-top: 10.6rem;
 }
 
-p {
+.content p {
     padding: 2.8rem 0;
     font-size: 1.8rem;
     line-height: 2.4rem;
 }
 
-p:nth-child(2) {
+.content p:nth-child(2) {
     grid-row: 1 / 2;
     padding: 0;
     color: var(--accent-color);
@@ -43,5 +41,5 @@ p:nth-child(2) {
     left: 0;
     right: 0;
     box-shadow: inset 1.5rem 0 12rem 9rem var(--background-color),
-        inset 15px -80px 155px 150px var(--background-color);
+        inset 1.5rem -8rem 15.5rem 15rem var(--background-color);
 }

@@ -1,0 +1,28 @@
+.content h3 {
+    margin-bottom: 0.6rem;
+}
+
+.content p {
+    margin-top: 0.6rem;
+    font-size: 1.8rem;
+}
+
+.content p:nth-child(2) {
+    color: var(--accent-color);
+}
+
+.content p:nth-child(2),
+.content p:nth-child(3) {
+    display: inline;
+    font-size: 2.4rem;
+}
+
+.content p:nth-child(3)::before {
+    content: '@';
+    margin-left: 0.6rem;
+}
+
+.content p:nth-child(2) strong,
+.content p:nth-child(3) strong {
+    display: none;
+}
