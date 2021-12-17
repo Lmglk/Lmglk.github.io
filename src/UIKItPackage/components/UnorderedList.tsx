@@ -2,8 +2,6 @@ import React, { PropsWithChildren, ReactElement } from 'react';
 
 import styles from './UnorderedList.pcss';
 
-type TProps = PropsWithChildren<{}>;
-
-export function UnorderedList(props: TProps): ReactElement {
+export function UnorderedList(props: PropsWithChildren<{}>): ReactElement {
     return <ul className={styles.list}>{props.children}</ul>;
 }
