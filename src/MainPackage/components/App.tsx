@@ -5,6 +5,7 @@ import { MainSectionContainer } from '../containers/MainSectionContainer';
 import { ExperienceSectionContainer } from '../containers/ExperienceSectionContainer';
 
 import styles from './App.pcss';
+import { StudiesSectionContainer } from '../containers/StudiesSectionContainer';
 
 export function App(): ReactElement {
     return (
@@ -13,6 +14,7 @@ export function App(): ReactElement {
             <main className={styles.sections}>
                 <MainSectionContainer />
                 <ExperienceSectionContainer />
+                <StudiesSectionContainer />
             </main>
         </Fragment>
     );
