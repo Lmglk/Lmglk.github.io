@@ -1,13 +1,13 @@
 import React, { ReactElement } from 'react';
 
-import { Tab } from '../../UIKItPackage/components/Tab';
+import { Link } from '../../UIKItPackage/components/Link';
 import { SectionsEnum } from '../enums/SectionsEnum';
 
 import styles from './Header.pcss';
 
 export function Header(): ReactElement {
     const sections = Object.values(SectionsEnum).map(name => (
-        <Tab key={name} name={name} href="#" />
+        <Link key={name} name={name} href="#section" />
     ));
 
     return (
