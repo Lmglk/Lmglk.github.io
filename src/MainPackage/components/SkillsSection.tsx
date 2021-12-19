@@ -24,10 +24,8 @@ export function SkillsSection(props: IProps): ReactElement {
     };
 
     return (
-        <section>
-            <Markdown className={styles.content} options={options}>
-                {props.content}
-            </Markdown>
+        <section className={styles.content}>
+            <Markdown options={options}>{props.content}</Markdown>
         </section>
     );
 }
