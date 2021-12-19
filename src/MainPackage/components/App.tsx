@@ -3,9 +3,10 @@ import React, { Fragment, ReactElement } from 'react';
 import { Header } from './Header';
 import { MainSectionContainer } from '../containers/MainSectionContainer';
 import { ExperienceSectionContainer } from '../containers/ExperienceSectionContainer';
+import { StudiesSectionContainer } from '../containers/StudiesSectionContainer';
+import { SkillsSectionContainer } from '../containers/SkillsSectionContainer';
 
 import styles from './App.pcss';
-import { StudiesSectionContainer } from '../containers/StudiesSectionContainer';
 
 export function App(): ReactElement {
     return (
@@ -15,6 +16,7 @@ export function App(): ReactElement {
                 <MainSectionContainer />
                 <ExperienceSectionContainer />
                 <StudiesSectionContainer />
+                <SkillsSectionContainer />
             </main>
         </Fragment>
     );
