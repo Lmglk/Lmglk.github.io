@@ -2,11 +2,21 @@
     padding-bottom: 5.6rem;
 }
 
-.section ul {
+.list {
+    margin: 0;
     padding-left: 4.6rem;
+    list-style: none;
     columns: 3;
 }
 
-.section li {
+.listItem {
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    grid-gap: 1rem;
+    align-items: center;
     padding-bottom: 2rem;
+}
+
+.listItemTitle {
+    display: none;
 }

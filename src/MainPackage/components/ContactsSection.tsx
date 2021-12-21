@@ -1,9 +1,10 @@
 import React, { ReactElement } from 'react';
 import Markdown from 'markdown-to-jsx';
-import { markdownOptions } from '../constants/markdownOptions';
+import { markdownIconOptions } from '../constants/markdownIconOptions';
+
+import { H2 } from '../../UIKItPackage/components/H2';
 
 import styles from './ContactsSection.pcss';
-import { ListItem } from '../../UIKItPackage/components/ListItem';
 
 interface IProps {
     content: string;
@@ -11,13 +12,24 @@ interface IProps {
 
 export function ContactsSection(props: IProps): ReactElement {
     const options = {
-        ...markdownOptions,
         overrides: {
-            ...markdownOptions.overrides,
-            li: {
-                component: ListItem,
+            ...markdownIconOptions.overrides,
+            h2: {
+                component: H2,
+            },
+            ul: {
                 props: {
-                    showMarker: false,
+                    className: styles.list,
+                },
+            },
+            li: {
+                props: {
+                    className: styles.listItem,
+                },
+            },
+            strong: {
+                props: {
+                    className: styles.listItemTitle,
                 },
             },
         },
