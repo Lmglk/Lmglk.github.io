@@ -10,9 +10,9 @@ export const sections = new Map<SectionsEnum, Section>()
         id: 'experience',
         title: SectionsEnum.experience,
     })
-    .set(SectionsEnum.studies, {
+    .set(SectionsEnum.education, {
         id: 'education',
-        title: SectionsEnum.studies,
+        title: SectionsEnum.education,
     })
     .set(SectionsEnum.skills, {
         id: 'skills',

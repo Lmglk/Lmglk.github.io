@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
-import { StudiesSection } from '../components/StudiesSection';
+import { EducationSection } from '../components/EducationSection';
 
-import markdown from '../../../content/StudiesSection.md';
+import markdown from '../../../content/EducationSection.md';
 
 export function StudiesSectionContainer(): ReactElement {
-    return <StudiesSection content={markdown} />;
+    return <EducationSection content={markdown} />;
 }
