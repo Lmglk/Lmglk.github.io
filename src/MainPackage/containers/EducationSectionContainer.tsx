@@ -3,6 +3,6 @@ import { EducationSection } from '../components/EducationSection';
 
 import markdown from '../../../content/EducationSection.md';
 
-export function StudiesSectionContainer(): ReactElement {
+export function EducationSectionContainer(): ReactElement {
     return <EducationSection content={markdown} />;
 }
