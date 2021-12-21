@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import { SectionsEnum } from '../enums/SectionsEnum';
 import { classList } from '../../UIKItPackage/utils/classList';
+import { sections } from '../constants/sections';
 
 import { Link } from '../../UIKItPackage/components/Link';
 
@@ -11,9 +11,9 @@ interface IProps {
 }
 
 export function Navigation({ inline = false }: IProps): ReactElement {
-    const sections = Object.values(SectionsEnum).map(name => (
-        <li className={styles.navigationItem} key={name}>
-            <Link name={name} href="#section" />
+    const sectionList = Array.from(sections.values()).map(section => (
+        <li className={styles.navigationItem} key={section.id}>
+            <Link name={section.title} href={`#${section.id}`} />
         </li>
     ));
 
@@ -25,7 +25,7 @@ export function Navigation({ inline = false }: IProps): ReactElement {
                     [styles.inline]: inline,
                 })}
             >
-                {sections}
+                {sectionList}
             </ul>
         </nav>
     );
