@@ -5,6 +5,7 @@ import { MainSectionContainer } from '../containers/MainSectionContainer';
 import { ExperienceSectionContainer } from '../containers/ExperienceSectionContainer';
 import { StudiesSectionContainer } from '../containers/StudiesSectionContainer';
 import { SkillsSectionContainer } from '../containers/SkillsSectionContainer';
+import { ContactsSectionContainer } from '../containers/ConactsSectionContainer';
 import { Footer } from './Footer';
 
 import styles from './App.pcss';
@@ -18,6 +19,7 @@ export function App(): ReactElement {
                 <ExperienceSectionContainer />
                 <StudiesSectionContainer />
                 <SkillsSectionContainer />
+                <ContactsSectionContainer />
             </main>
             <footer className={styles.footer}>
                 <Footer />
