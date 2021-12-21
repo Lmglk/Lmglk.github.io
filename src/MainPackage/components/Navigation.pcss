@@ -1,0 +1,16 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.inline {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 6.6rem;
+}
+
+.list:not(.inline) .navigationItem:not(:last-child) {
+    margin-bottom: 1.8rem;
+}
