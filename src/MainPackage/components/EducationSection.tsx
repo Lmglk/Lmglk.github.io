@@ -6,14 +6,14 @@ import { sections } from '../constants/sections';
 
 import { H2 } from '../../UIKItPackage/components/H2';
 
-import styles from './ExperienceSection.pcss';
+import styles from './EducationSection.pcss';
 
 interface IProps {
     content: string;
 }
 
-export function ExperienceSection(props: IProps): ReactElement {
-    const section = sections.get(SectionsEnum.experience);
+export function EducationSection(props: IProps): ReactElement {
+    const section = sections.get(SectionsEnum.education);
     const options = {
         ...markdownOptions,
         overrides: {

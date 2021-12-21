@@ -1,4 +1,4 @@
-## Studies
+## Education
 
 -   ### 2018 - 2020
 

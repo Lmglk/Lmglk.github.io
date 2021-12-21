@@ -3,7 +3,7 @@ import React, { Fragment, ReactElement } from 'react';
 import { Header } from './Header';
 import { MainSectionContainer } from '../containers/MainSectionContainer';
 import { ExperienceSectionContainer } from '../containers/ExperienceSectionContainer';
-import { StudiesSectionContainer } from '../containers/StudiesSectionContainer';
+import { EducationSectionContainer } from '../containers/EducationSectionContainer';
 import { SkillsSectionContainer } from '../containers/SkillsSectionContainer';
 import { ContactsSectionContainer } from '../containers/ConactsSectionContainer';
 import { Footer } from './Footer';
@@ -17,7 +17,7 @@ export function App(): ReactElement {
             <main className={styles.sections}>
                 <MainSectionContainer />
                 <ExperienceSectionContainer />
-                <StudiesSectionContainer />
+                <EducationSectionContainer />
                 <SkillsSectionContainer />
                 <ContactsSectionContainer />
             </main>

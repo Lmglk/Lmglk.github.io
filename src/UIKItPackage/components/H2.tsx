@@ -1,7 +1,23 @@
 import React, { PropsWithChildren, ReactElement } from 'react';
 
 import styles from './H2.pcss';
+import { classList } from '../utils/classList';
 
-export function H2(props: PropsWithChildren<{}>): ReactElement {
-    return <h2 className={styles.heading}>{props.children}</h2>;
+interface IProps {
+    id: string;
+    className: string;
+}
+
+export function H2(props: PropsWithChildren<IProps>): ReactElement {
+    return (
+        <h2
+            id={props.id}
+            className={classList({
+                [styles.heading]: true,
+                [props.className]: Boolean(props.className),
+            })}
+        >
+            {props.children}
+        </h2>
+    );
 }
