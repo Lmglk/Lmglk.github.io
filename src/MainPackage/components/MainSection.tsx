@@ -5,6 +5,7 @@ import { markdownOptions } from '../constants/markdownOptions';
 import { sections } from '../constants/sections';
 
 import { H1 } from '../../UIKItPackage/components/H1';
+import { Button } from '../../UIKItPackage/components/Button';
 
 import image from '../../../assets/images/person@1x.webp';
 import image2x from '../../../assets/images/person@2x.webp';
@@ -30,11 +31,26 @@ export function MainSection(props: IProps): ReactElement {
         },
     };
 
+    const handleClickButton = () => {
+        const contactSection = sections.get(SectionsEnum.contacts);
+
+        if (contactSection === undefined) {
+            return;
+        }
+
+        document.location = `#${contactSection.id}`;
+    };
+
     return (
         <section className={styles.grid}>
-            <Markdown className={styles.content} options={options}>
-                {props.content}
-            </Markdown>
+            <div>
+                <Markdown className={styles.content} options={options}>
+                    {props.content}
+                </Markdown>
+                <Button className={styles.button} onClick={handleClickButton}>
+                    Contacts
+                </Button>
+            </div>
             <div className={styles.imageContainer}>
                 <img
                     className={styles.image}
