@@ -5,7 +5,7 @@ import { MainSectionContainer } from '../containers/MainSectionContainer';
 import { ExperienceSectionContainer } from '../containers/ExperienceSectionContainer';
 import { EducationSectionContainer } from '../containers/EducationSectionContainer';
 import { SkillsSectionContainer } from '../containers/SkillsSectionContainer';
-import { ContactsSectionContainer } from '../containers/ConactsSectionContainer';
+import { ContactsSectionContainer } from '../containers/ContactsSectionContainer';
 import { Footer } from './Footer';
 
 import styles from './App.pcss';
