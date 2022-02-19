@@ -2,4 +2,4 @@
 
 Frontend Developer
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias asperiores, aspernatur blanditiis consequatur cumque dolores error explicabo fugit incidunt, libero, magnam magni modi nam non obcaecati omnis quasi quis reiciendis sit tempora temporibus ut! Impedit modi nemo neque nesciunt obcaecati quas quod saepe ut vero voluptatum? Aliquam aut debitis dicta dignissimos, distinctio, facere, ipsum labore modi nesciunt odio qui repellendus velit. Maxime perspiciatis quia veritatis voluptates? Beatae dolores maxime minima modi natus perspiciatis placeat, repellat sequi veniam. At hic id minima odit quae quibusdam quos repellendus suscipit?
+I have over 5 years of experience in frontend development. Prefer to write clear and understandable code with a minimum of libraries. Participated in Olympiads programming and hackathons. In addition to programming, I am interested in photography and graphics.
