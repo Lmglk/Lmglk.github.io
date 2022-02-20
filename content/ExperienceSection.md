@@ -56,7 +56,13 @@
 
     Technology stack: Angular, NgRx, SASS/SCSS, Java, Spring, Hibernate, PostgreSQL.
 
-    My activity: Implementing OAuth authorization. Role management implementation. Setting up charts using the AmCharts library. Creating custom interactive charts using D3.js (Sankey diagram, geo map, tree diagram). Implementing notifications using WebSocket protocol.
+    My activity:
+
+    1. Implementing OAuth authorization.
+    2. Role management implementation.
+    3. Setting up charts using the AmCharts library.
+    4. Creating custom interactive charts using D3.js (Sankey diagram, geo map, tree diagram).
+    5. Implementing notifications using WebSocket protocol.
 
     #### Fourth project (2016 - 2017). Tool for designing medium and low voltage networks, as well as the selection of the necessary equipment.
 
@@ -64,4 +70,9 @@
 
     Technology stack: AngularJS, Redux, SASS/SCSS, Java, Spring, Hibernate, PostgreSQL.
 
-    My activity: Manual and automatic testing of the application. Development of tests in Java using the Selenide library (Selenium WebDriver), Setting up a CI / CD using Jenkins. Deploying SonarQube for Code Analysis
+    My activity:
+
+    1. Manual and automatic testing of the application.
+    2. Development of tests in Java using the Selenide library (Selenium WebDriver).
+    3. Setting up a CI / CD using Jenkins.
+    4. Deploying SonarQube for Code Analysis
