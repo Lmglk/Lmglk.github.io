@@ -10,7 +10,13 @@
 
     Technology stack: Angular, Typescript, SASS/SCSS, Less, NgRx, Jest, C#, PostgreSQL.
 
-    Took part in the development of a doctor's workplace. My activity: Implementation of new features in the area of scheduling, examination protocol and appointments. Dividing the monolith into a micro-frontend application. Migration of an application from AngularJS to Angular. Code review and writing unit tests using Jest. Analysis and evaluation of tasks.
+    Took part in the development of a doctor's workplace. My activity:
+
+    1. Implementation of new features in the area of scheduling, examination protocol and appointments.
+    2. Dividing the monolith into a micro-frontend application.
+    3. Migration of an application from AngularJS to Angular.
+    4. Code review and writing unit tests using Jest.
+    5. Analysis and evaluation of tasks.
 
 -   ### 2016 - 2020
 
@@ -18,23 +24,33 @@
 
     **Company:** Siemens
 
-    First project (2019 - 2020). Landing page development
+    #### First project (2019 - 2020). Landing page development
 
     Team: 1 - Product Manager, 2 - Frontend developers, 1 - UI/UX Designer.
 
     Technology stack: React, Typescript, PostCSS.
 
-    The project used its own style guide based on the Google JavaScript Style Guide. Also I had a mentor who reviewed code. My activity: Implementation of the entire landing page and UI kit. Setting up CI in Gitlab.
+    The project used its own style guide based on the Google JavaScript Style Guide. Also I had a mentor who reviewed code. My activity:
 
-    Second project (2018 - 2020). Tools for preparing data for modeling in other software.
+    1. Implementation of the entire landing page and UI kit.
+    2. Setting up CI in Gitlab.
+
+    #### Second project (2018 - 2020). Tools for preparing data for modeling in other software.
 
     Team: 1 - Product Manager, 3 - Frontend, 2 - Backend, 1 - Tester, 1 - Designer.
 
     Technology stack: Angular, NgRx, Jest, AWS (Lambda), Serverless, Python, DynamoDB (NoSQL).
 
-    The tasks of the project included the implementation of four subprojects, which should exist as stand-alone applications and be integrated into a larger application. Code review was conducted in the project (Each developer reviews another developer's code). The project used its own style guide based on the Google JavaScript Style Guide. My activity: Development of UI kit and new features. Creating interactive charts using D3.js. Dividing the project into npm-modules and publishing in the npm registry. Integration subprojects into a larger application. Writing unit tests. Evaluating tasks.
+    The tasks of the project included the implementation of four subprojects, which should exist as stand-alone applications and be integrated into a larger application. Code review was conducted in the project (Each developer reviews another developer's code). The project used its own style guide based on the Google JavaScript Style Guide. My activity:
 
-    Third project (2017 - 2020). Power System Analysis and Optimization Tool.
+    1. Development of UI kit and new features.
+    2. Creating interactive charts using D3.js.
+    3. Dividing the project into npm-modules and publishing in the npm registry.
+    4. Integration subprojects into a larger application.
+    5. Writing unit tests.
+    6. Evaluating tasks.
+
+    #### Third project (2017 - 2020). Power System Analysis and Optimization Tool.
 
     Team: 1 - Product Manager, 2 - Frontend, 2 - Backend, 1 - Designer.
 
@@ -42,7 +58,7 @@
 
     My activity: Implementing OAuth authorization. Role management implementation. Setting up charts using the AmCharts library. Creating custom interactive charts using D3.js (Sankey diagram, geo map, tree diagram). Implementing notifications using WebSocket protocol.
 
-    Fourth project (2016 - 2017). Tool for designing medium and low voltage networks, as well as the selection of the necessary equipment.
+    #### Fourth project (2016 - 2017). Tool for designing medium and low voltage networks, as well as the selection of the necessary equipment.
 
     Team: 1 - Product Manager, 1 - Frontend, 2 - Backend, 1 - Tester.
 

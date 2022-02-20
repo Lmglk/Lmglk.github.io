@@ -4,7 +4,7 @@ import { SectionsEnum } from '../enums/SectionsEnum';
 import { markdownOptions } from '../constants/markdownOptions';
 import { sections } from '../constants/sections';
 
-import { ListItem } from '../../UIKItPackage/components/ListItem';
+import { UnorderedList } from '../../UIKItPackage/components/UnorderedList';
 import { H2 } from '../../UIKItPackage/components/H2';
 
 import styles from './SkillsSection.pcss';
@@ -25,8 +25,8 @@ export function SkillsSection(props: IProps): ReactElement {
                     id: section ? section.id : null,
                 },
             },
-            li: {
-                component: ListItem,
+            ul: {
+                component: UnorderedList,
                 props: {
                     showMarker: false,
                 },
