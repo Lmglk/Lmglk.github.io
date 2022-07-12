@@ -1,7 +1,24 @@
 import React, { PropsWithChildren, ReactElement } from 'react';
 
 import styles from './UnorderedList.pcss';
+import { classList } from '../utils/classList';
 
-export function UnorderedList(props: PropsWithChildren<{}>): ReactElement {
-    return <ul className={styles.list}>{props.children}</ul>;
+interface IProps {
+    showMarker: boolean;
+}
+
+export function UnorderedList({
+    children,
+    showMarker = true,
+}: PropsWithChildren<IProps>): ReactElement {
+    return (
+        <ul
+            className={classList({
+                [styles.list]: true,
+                [styles.showMarker]: showMarker,
+            })}
+        >
+            {children}
+        </ul>
+    );
 }
